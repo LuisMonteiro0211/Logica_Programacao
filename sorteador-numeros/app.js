@@ -12,7 +12,7 @@ function sorteador_numeros(minimo, maximo, quantidade){
     let numeros_sorteados = [];
 
     for (let contador = 0; contador <= quantidade; contador++){
-        numeros_sorteados.push(Math.round(Math.random() * (maximo - minimo))+minimo);
+        numeros_sorteados.push(Math.round(Math.random() * (maximo - minimo+1))+minimo);
     }
 
 }
