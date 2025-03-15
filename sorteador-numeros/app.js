@@ -1,12 +1,3 @@
-function sortear() {
-  let quantidade = parseInt(document.getElementById("quantidade").value);
-  let minimo = parseInt(document.getElementById("de").value);
-  let maximo = parseInt(document.getElementById("ate").value);
-
-  let num_aleatorio = sorteador_numeros(minimo, maximo, quantidade);
-  alert(num_aleatorio);
-}
-
 function sorteador_numeros(minimo, maximo, quantidade) {
   let numeros_sorteados = [];
 
@@ -17,4 +8,13 @@ function sorteador_numeros(minimo, maximo, quantidade) {
     );
   }
   return numeros_sorteados;
+}
+
+function sortear() {
+  let quantidade = parseInt(document.getElementById("quantidade").value);
+  let minimo = parseInt(document.getElementById("de").value);
+  let maximo = parseInt(document.getElementById("ate").value);
+
+  let num_aleatorio = sorteador_numeros(minimo, maximo, quantidade);
+  alert(num_aleatorio);
 }
